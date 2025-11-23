@@ -4,6 +4,10 @@
 // Define the Product class with its properties
 // we can check lesson link above for 
 // also check lesson and zoom video for reference in per scholas portal 
+import { calculateDiscount } from "../utils/discountCalculator";
+
+import { calculateTax } from "../utils/taxCalculator";
+
 export class Product {
   id: number;
   title: string;
