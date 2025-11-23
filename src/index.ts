@@ -43,7 +43,7 @@ async function main(): Promise<void> {
       console.log();
     }
 
-    // Simple extra example using the tax calculator directly
+    // extra example using the tax calculator directly
     const exampleTax = calculateTax(100, "Rocky's electronics");
 
     console.log(`Tax on $100 Rocky's electronics item: $${exampleTax.toFixed(2)}\n`);
