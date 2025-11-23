@@ -1,6 +1,9 @@
 // src/index.ts
 // Main Entry File for the SBA project
-
+// i am planing to add html ui later
+// so for now this will be console based app
+// we can check lesson link above for 
+// also check lesson and zoom video for reference in per scholas portal
 import { Product } from "./models/Product";
 import { fetchProducts } from "./services/apiService";
 import { calculateTax } from "./utils/taxCalculator";
