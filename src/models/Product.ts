@@ -41,7 +41,7 @@ this.category = data.category;
 
     this.price = data.price;
     this.discountPercentage = data.discountPercentage;
-  }
+  
 }
 // https://ps-lms.vercel.app/curriculum/se/413/sba#:~:text=Include%20methods%20displayDetails()%20and%20getPriceWithDiscount()%2C%20and%20implement%20them%20appropriately%20based%20on%20the%20provided%20data.
 // Method to display product details
@@ -85,4 +85,5 @@ console.log("Description:");
     };
   }
 }
+
 
