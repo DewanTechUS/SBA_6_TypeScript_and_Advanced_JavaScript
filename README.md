@@ -86,9 +86,9 @@ Fix: Updated HTML to load ui.js.
 These issues improved my debugging skills, error reading, and understanding of TypeScript flow.
 
 # How to Run the CLI App
-1. Compile TypeScript
+- Compile TypeScript
 npx tsc
-2. Run the App
+- Run the App
 node dist/index.js
 
 # How to Use the Optional UI (I will add this in future)
