@@ -9,7 +9,7 @@ export class Product {
   title: string;
 description: string;
   category: string;
-  
+
   price: number;
   discountPercentage: number;
 
@@ -39,3 +39,20 @@ this.category = data.category;
     this.discountPercentage = data.discountPercentage;
   }
 }
+// https://ps-lms.vercel.app/curriculum/se/413/sba#:~:text=Include%20methods%20displayDetails()%20and%20getPriceWithDiscount()%2C%20and%20implement%20them%20appropriately%20based%20on%20the%20provided%20data.
+// Method to display product details
+// note taken from previous code/lesson
+  displayDetails(): void { 
+   
+    console.log(`ID:        ${this.id}`);
+
+    console.log(`Title:     ${this.title}`);
+    console.log(`Category:  ${this.category}`);
+    console.log(`Price:     $${this.price.toFixed(2)}`);
+   console.log(`Discount:  ${this.discountPercentage}%`);
+    
+console.log("Description:");
+    console.log(this.description);
+    
+    }   
+
