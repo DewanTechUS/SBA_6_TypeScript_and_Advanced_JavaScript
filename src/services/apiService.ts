@@ -7,8 +7,9 @@ import { Product } from "../models/Product";
 
 import { ApiError } from "../utils/errorHandler";
 //url for the DummyJSON products API 
-const PRODUCTS_URL = "https://dummyjson.com/products";
+const API_URL = "https://dummyjson.com/products";
 
+//const PRODUCTS_URL = "https://dummyjson.com/products";
 
 interface DummyJsonProduct {
   id: number;
@@ -28,7 +29,7 @@ interface ProductsResponse {
 export async function fetchProducts(): Promise<Product[]> {
   try {
   
-    const response = await fetch(PRODUCTS_URL);
+    const response = await fetch(API_URL);
 
   
     if (!response.ok) {

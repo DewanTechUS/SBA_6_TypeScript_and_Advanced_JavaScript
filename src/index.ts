@@ -9,8 +9,21 @@ import { fetchProducts } from "./services/apiService";
 import { calculateTax } from "./utils/taxCalculator";
 import { handleError } from "./utils/errorHandler";
 
-async function main(): Promise<void> {
-  console.log("Starting E-Commerce SBA App...\n");
+
+async function main() {
+  console.log("Testing limited API request...\n");
+  // testing 1 the limited API request
+  // we can comment this out later
+// fetching limited products with specific fields
+//----------------------------------------
+  fetch("https://dummyjson.com/products?limit=10&skip=10&select=title,price")
+    .then((res) => res.json())
+    .then((data) => console.log("Limited Products:", data));
+
+// testing 2 the full product details
+//----------------------------------------
+// async function main(): Promise<void> {
+//   console.log("Starting E-Commerce SBA App...\n");
 
   try {
     // fetch product data from the API (async/await)
