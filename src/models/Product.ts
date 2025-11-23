@@ -54,5 +54,31 @@ this.category = data.category;
 console.log("Description:");
     console.log(this.description);
     
-    }   
+    }
+    // https://ps-lms.vercel.app/curriculum/se/413/sba#:~:text=Include%20methods%20displayDetails()%20and%20getPriceWithDiscount()%2C%20and%20implement%20them%20appropriately%20based%20on%20the%20provided%20data.
+// Method to calculate price after 
+    // discount
+
+  getPriceWithDiscount(): {
+    originalPrice: number;
+    discountAmount: number;
+    discountedPrice: number;
+    taxAmount: number;
+    finalPrice: number;
+  } {
+    const originalPrice = this.price;
+    const discountAmount = calculateDiscount(this.price, this.discountPercentage);
+    const discountedPrice = originalPrice - discountAmount;
+    const taxAmount = calculateTax(discountedPrice, this.category);
+    const finalPrice = discountedPrice + taxAmount;
+
+    return {
+      originalPrice: Number(originalPrice.toFixed(2)),
+      discountAmount,
+      discountedPrice: Number(discountedPrice.toFixed(2)),
+      taxAmount,
+      finalPrice: Number(finalPrice.toFixed(2)),
+    };
+  }
+}
 
