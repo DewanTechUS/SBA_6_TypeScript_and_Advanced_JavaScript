@@ -4,7 +4,18 @@ const apiService_1 = require("./services/apiService");
 const taxCalculator_1 = require("./utils/taxCalculator");
 const errorHandler_1 = require("./utils/errorHandler");
 async function main() {
-    console.log("Starting E-Commerce SBA App...\n");
+    console.log("Testing limited API request...\n");
+    // testing 1 the limited API request
+    // we can comment this out later
+    // fetching limited products with specific fields
+    //----------------------------------------
+    fetch("https://dummyjson.com/products?limit=10&skip=10&select=title,price")
+        .then((res) => res.json())
+        .then((data) => console.log("Limited Products:", data));
+    // testing 2 the full product details
+    //----------------------------------------
+    // async function main(): Promise<void> {
+    //   console.log("Starting E-Commerce SBA App...\n");
     try {
         // fetch product data from the API (async/await)
         const products = await (0, apiService_1.fetchProducts)();

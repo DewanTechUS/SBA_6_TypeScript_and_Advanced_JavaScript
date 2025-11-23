@@ -6,10 +6,10 @@ exports.fetchProducts = fetchProducts;
 const Product_1 = require("../models/Product");
 const errorHandler_1 = require("../utils/errorHandler");
 //url for the DummyJSON products API 
-const PRODUCTS_URL = "https://dummyjson.com/products";
+const API_URL = "https://dummyjson.com/products";
 async function fetchProducts() {
     try {
-        const response = await fetch(PRODUCTS_URL);
+        const response = await fetch(API_URL);
         if (!response.ok) {
             throw new errorHandler_1.ApiError(`Failed to fetch products`, response.status);
         }
