@@ -9,7 +9,7 @@ import { ApiError } from "../utils/errorHandler";
 //url for the DummyJSON products API 
 const API_URL = "https://dummyjson.com/products";
 
-//const PRODUCTS_URL = "https://dummyjson.com/products";
+//const API_URL = "https://dummyjson.com/products";
 
 interface DummyJsonProduct {
   id: number;
