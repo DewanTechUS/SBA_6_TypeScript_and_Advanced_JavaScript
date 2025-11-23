@@ -6,7 +6,7 @@
 
 # Project Overview
 
-## This project is my completed work for SBA 6: TypeScript & Advanced JavaScript, and it represents the second fully planned version of my SBA. In my first attempt, I spent a lot of time experimenting, testing, and learning through mistakes, which helped me understand the concepts more deeply. Using that experience, I rebuilt the project in a more organized and structured way.
+- This project is my completed work for SBA 6: TypeScript & Advanced JavaScript, and it represents the second fully planned version of my SBA. In my first attempt, I spent a lot of time experimenting, testing, and learning through mistakes, which helped me understand the concepts more deeply. Using that experience, I rebuilt the project in a more organized and structured way.
 
 ## I created an e-commerce product system that fetches real product data from the DummyJSON API and processes it using:
 
